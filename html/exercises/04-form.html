@@ -9,7 +9,63 @@
   <body>
     <main>
       <form action="">
-        <!-- Add your code here -->
+        <h1>Form</h1>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="full-name"
+            placeholder="Full Name"
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@pdx.edu"
+          />
+        </div>
+        <br />
+        <fieldset>
+          <ledeng>Favorite Character:</ledeng>
+          <div>
+            <input
+              type="radio"
+              id="Spongebob"
+              name="character"
+              value="spongebob"
+            />
+            <label for="Spongebob">Spongebob</label>
+          </div>
+          <div>
+            <input type="radio" id="Sandy" name="character" value="sandy" />
+            <label for="Sandy">Sandy</label>
+          </div>
+          <div>
+            <input type="radio" id="Patrick" name="character" value="patrick" />
+            <label for="Patrick">Patrick</label>
+          </div>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <div>
+            <input type="checkbox" id="option1" name="episodes" value="yes" />
+            <label for="option1">Yes, I have watched all episodes!</label>
+          </div>
+          <div>
+            <input type="checkbox" id="option2" name="episodes" value="yes" />
+            <label for="opetion2">Yes, it's got the best memes.</label>
+          </div>
+        </fieldset>
+        <br />
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
       </form>
     </main>
   </body>
