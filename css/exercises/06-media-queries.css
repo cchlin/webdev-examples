@@ -1,3 +1,61 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--black);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  /* margin: 1em; */
+  padding: 1em;
+  text-decoration: none;
+  color: var(--white);
+}
+
+nav ul li a:hover {
+  background-color: var(--gray1);
+}
+
+.main {
+  margin-top: 100px;
+  padding: 0 0.5em;
+}
+
+body {
+  background: var(--purple);
+  color: var(--white);
+}
+
+@media (max-width: 430px) {
+  nav ul li {
+    width: 100%;
+  }
+
+  .main {
+    margin-top: 220px;
+  }
+}
+
+/* it is also ok to not add (max-width: 1023px) */
+@media (min-width: 415px) and (max-width: 1023px){
+  body {
+    background: var(--orange);
+    color: var(--black);
+  }
+}
+
 @media (min-width: 1024px) {
   body {
     background: var(--green);
