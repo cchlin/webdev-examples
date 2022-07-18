@@ -59,6 +59,7 @@
 /* Flex Container 6 */
 .flex-container-6 {
   height: 300px;
+  display: flex;
   flex-flow: column wrap;
 }
 
